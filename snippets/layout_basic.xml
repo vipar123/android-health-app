@@ -81,6 +81,15 @@
 
         </LinearLayout>
     </LinearLayout>
+    
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        if (toolbar != null) {
+            setSupportActionBar(toolbar);
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+    
+    
+    
 
 </androidx.core.widget.NestedScrollView>
 
