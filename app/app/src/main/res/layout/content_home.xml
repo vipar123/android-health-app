@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.LoginActivity"
+    tools:showIn="@layout/activity_login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fragment_horizontal_margin"
+        android:layout_marginTop="@dimen/fragment_vertical_margin"
+        android:layout_marginBottom="@dimen/fragment_horizontal_margin"
+        android:layout_marginRight="@dimen/fragment_vertical_margin"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="search"
+            android:background="@color/colorAccent"
+            android:layout_marginBottom="@dimen/fragment_horizontal_margin"
+            android:textColor="#fff"
+            android:id="@+id/btnSearch"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:background="@color/colorAccent"
+            android:layout_marginBottom="@dimen/fragment_horizontal_margin"
+            android:textColor="#fff"
+            android:id="@+id/btnRegister"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sync"
+            android:background="@color/colorAccent"
+            android:layout_marginBottom="@dimen/fragment_horizontal_margin"
+            android:textColor="#fff"
+            android:id="@+id/btnSync"/>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"
+            android:id="@+id/btnLogout"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
