@@ -970,3 +970,15 @@ this.syncDate = syncDate;
         android:onClick="onRadioButtonClicked"/>
 </RadioGroup>
 ```
+Important libraries
+
+```
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:retrofit-adapters:2.4.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.1.2'
+
+```
+
+
