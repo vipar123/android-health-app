@@ -973,11 +973,34 @@ this.syncDate = syncDate;
 Important libraries
 
 ```
-    implementation 'androidx.recyclerview:recyclerview:1.0.0'
-    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
-    implementation 'com.squareup.retrofit2:retrofit-adapters:2.4.0'
-    implementation 'com.squareup.okhttp3:okhttp:3.1.2'
+import android.arch.persistence.room.Dao;
+import android.arch.persistence.room.Delete;
+import android.arch.persistence.room.Insert;
+import android.arch.persistence.room.Query;
+import android.arch.persistence.room.Update;
+
+import com.ashish.roomdemo.model.Person;
+
+import java.util.List;
+
+@Dao
+public interface PersonDao {
+
+    @Query("SELECT * FROM PERSON ORDER BY ID")
+    List<Person> loadAllPersons();
+
+    @Insert
+    void insertPerson(Person person);
+
+    @Update
+    void updatePerson(Person person);
+
+    @Delete
+    void delete(Person person);
+
+    @Query("SELECT * FROM PERSON WHERE id = :id")
+    Person loadPersonById(int id);
+}
 
 ```
 
