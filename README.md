@@ -10,12 +10,13 @@ Room implementation
 
 API endpoints
 
+```
 /ping 
 /login 
 /register
 /sync
 /facility
-
+```
 
 
 
