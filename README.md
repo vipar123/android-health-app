@@ -9,26 +9,13 @@ Room implementation
 [Room Tutorial](https://medium.com/mindorks/using-room-database-android-jetpack-675a89a0e942)
 
 ```
-    public void onSaveButtonClicked() {
-        final Person person = new Person(
-                name.getText().toString(),
-                email.getText().toString(),
-                phoneNumber.getText().toString(),
-                pincode.getText().toString(),
-                city.getText().toString());
-
-        AppExecutors.getInstance().diskIO().execute(new Runnable() {
-            @Override
-            public void run() {
-                if (!intent.hasExtra(Constants.UPDATE_Person_Id)) {
-                    mDb.personDao().insertPerson(person);
-                } else {
-                    person.setId(mPersonId);
-                    mDb.personDao().updatePerson(person);
-                }
-                finish();
-            }
-        });
+    public Person(int id, String name, String email, String number, String pincode, String city) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.number = number;
+        this.pincode = pincode;
+        this.city = city;
     }
   ```
 
