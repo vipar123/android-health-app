@@ -8,6 +8,17 @@ Room implementation
 
 [Room Tutorial](https://medium.com/mindorks/using-room-database-android-jetpack-675a89a0e942)
 
+API endpoints
+
+/ping 
+/login 
+/register
+/sync
+/facility
+
+
+
+
 ```
     public Person(int id, String name, String email, String number, String pincode, String city) {
         this.id = id;
