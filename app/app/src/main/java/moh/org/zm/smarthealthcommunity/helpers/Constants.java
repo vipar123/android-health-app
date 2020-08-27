@@ -15,5 +15,8 @@ public class Constants {
     public static final String PE_TEMPERATURE = "PE_TEMPERATURE";
     public static final String PE_URINE_PROTEIN = "PE_URINE_PROTEIN";
 
+    public static final String USER_FACILITY_CODE = "USER_FACILITY_CODE";
+    public static final String CLIENT_GUID = "CLIENT_GUID";
+    public static final String CLIENT_NAME = "CLIENT_NAME";
 
 }

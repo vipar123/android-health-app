@@ -39,34 +39,24 @@ public class StableOnCareActivity extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(true){
+                if (true) {
                     Intent i = new Intent(StableOnCareActivity.this, PhysicalExamActivity.class);
                     i.putExtra(HH_FEVER, getSelectedRadioValue(fever.getCheckedRadioButtonId()));
                     i.putExtra(HH_COUGH, getSelectedRadioValue(cough.getCheckedRadioButtonId()));
                     i.putExtra(HH_WEIGHT_LOSS, getSelectedRadioValue(weightloss.getCheckedRadioButtonId()));
                     i.putExtra(HH_HEADACHE, getSelectedRadioValue(headache.getCheckedRadioButtonId()));
                     startActivity(i);
-                }else{
+                } else {
                     Intent i = new Intent(StableOnCareActivity.this, ReferralActivity.class);
                     startActivity(i);
                 }
             }
         });
-
-
-
-
-
-
-
-
-
-
     }
 
     public String getSelectedRadioValue(int id) {
         RadioButton selectedRadioButton = findViewById(id);
-        if(selectedRadioButton != null){
+        if (selectedRadioButton != null) {
             return selectedRadioButton.getText().toString();
         }
         return "";

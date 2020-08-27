@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/fragment_horizontal_margin"
         android:layout_marginTop="@dimen/fragment_vertical_margin"
-        android:layout_marginBottom="@dimen/fragment_horizontal_margin"
         android:layout_marginRight="@dimen/fragment_vertical_margin"
+        android:layout_marginBottom="@dimen/fragment_horizontal_margin"
         android:orientation="vertical">
 
 
@@ -25,7 +25,7 @@
             android:text="Name/Nrc" />
 
         <EditText
-            android:id="@+id/tvUsername"
+            android:id="@+id/edSearchQuery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -42,6 +42,19 @@
                 android:text="search"
                 android:textColor="#fff" />
 
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSearchResults"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
         </LinearLayout>
 

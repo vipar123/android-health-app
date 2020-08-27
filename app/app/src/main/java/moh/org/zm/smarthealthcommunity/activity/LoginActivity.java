@@ -14,6 +14,8 @@ import androidx.appcompat.widget.Toolbar;
 import moh.org.zm.smarthealthcommunity.R;
 import moh.org.zm.smarthealthcommunity.helpers.AppDatabase;
 
+import static moh.org.zm.smarthealthcommunity.helpers.Constants.USER_FACILITY_CODE;
+
 public class LoginActivity  extends AppCompatActivity {
     private AppDatabase db;
 
@@ -30,7 +32,7 @@ public class LoginActivity  extends AppCompatActivity {
             public void onClick(View view) {
                 if(username.getText().toString().equals("admin") && password.getText().toString().equals("12345")){
                     Intent i = new Intent(LoginActivity.this, HomeActivity.class);
-                   // i.putExtra("key", value);
+                    i.putExtra(USER_FACILITY_CODE, "5040-016");
                     startActivity(i);
                 }else{
                     new AlertDialog.Builder(LoginActivity.this)

@@ -15,15 +15,11 @@
         <activity android:name=".activity.ClientRecordActivity" android:label="Client Record">
 
         </activity>
-        <activity android:name=".activity.HIVTestingActivity" android:label="HivTesting">
+        <activity android:name=".activity.HIVTestingActivity" android:label="Hiv Testing">
 
         </activity>
         <activity android:name=".activity.HomeActivity" android:label="Home">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".activity.LoginActivity" android:label="Log In">
 
@@ -44,8 +40,11 @@
 
         </activity>
         <activity android:name=".activity.SearchActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

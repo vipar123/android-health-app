@@ -56,12 +56,6 @@ public class PatientRegistrationActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         db.patientDAO().insertPatient(patient);
-                        //    if (!intent.hasExtra(Constants.UPDATE_Person_Id)) {
-                        //      db.PatientDAO().insertPerson(patient);
-                        // } else {
-                        //   patient.setId(mPersonId);
-                        //  db.PatientDAO().updatePatient(patient);
-                        // }
                         finish();
                     }
                 });
