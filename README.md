@@ -10,7 +10,7 @@ Room implementation
 
 [Express Tutorial](https://dev.to/lennythedev/quick-rest-api-with-node-and-express-in-5-minutes-336j)
 
-
+[RecyclerView](https://stackoverflow.com/questions/40584424/simple-android-recyclerview-example)
 API endpoints
 
 ```
