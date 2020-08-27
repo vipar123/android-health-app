@@ -12,6 +12,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import moh.org.zm.smarthealthcommunity.R;
 
+import static moh.org.zm.smarthealthcommunity.helpers.Constants.HH_COUGH;
+import static moh.org.zm.smarthealthcommunity.helpers.Constants.HH_FEVER;
+import static moh.org.zm.smarthealthcommunity.helpers.Constants.HH_HEADACHE;
+import static moh.org.zm.smarthealthcommunity.helpers.Constants.HH_WEIGHT_LOSS;
+
 public class PhysicalExamActivity extends AppCompatActivity {
 
     @Override
@@ -36,7 +41,10 @@ public class PhysicalExamActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (true) {
                     Intent i = new Intent(PhysicalExamActivity.this, DispensationActivity.class);
-
+                    i.putExtra(HH_FEVER, getSelectedRadioValue(fever.getCheckedRadioButtonId()));
+                    i.putExtra(HH_COUGH, getSelectedRadioValue(cough.getCheckedRadioButtonId()));
+                    i.putExtra(HH_WEIGHT_LOSS, getSelectedRadioValue(weightloss.getCheckedRadioButtonId()));
+                    i.putExtra(HH_HEADACHE, getSelectedRadioValue(headache.getCheckedRadioButtonId()));
                     startActivity(i);
                 }
 

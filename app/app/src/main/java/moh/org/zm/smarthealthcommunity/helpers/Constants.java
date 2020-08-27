@@ -9,7 +9,7 @@ public class Constants {
 
     public static final String DP_QUANTITY = "DP_QUANTITY";
     public static final String DRUG_PRODUCT = "DRUG_PRODUCT";
-    public static final String FREQUENCY = "FREQUENCY";
+    public static final String DP_FREQUENCY = "DP_FREQUENCY";
 
     public static final String PE_BLOOD_PRESSURE = "PE_BLOOD_PRESSURE";
     public static final String PE_TEMPERATURE = "PE_TEMPERATURE";
