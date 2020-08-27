@@ -30,6 +30,16 @@ public class Appointment {
     @Expose
     private String syncDate;
 
+
+
+    public Appointment(String id ,String facilityCode,String dateOfVisit,String servicePoint, String patientId) {
+        this.id = id;
+        this.dateOfVisit = dateOfVisit;
+        this.servicePoint = servicePoint;
+        this.patientId = patientId;
+        this.facilityCode=facilityCode;
+
+    }
     public String getId() {
         return id;
     }

@@ -88,6 +88,32 @@ public class HivTesting {
     @SerializedName("syncDate")
     @Expose
     private String syncDate;
+    public HivTesting(String id, String consentToTestToday ,String pretestClientHasGivenFeedbackOnHiv,String pretestClientHasSaidWhyTesting ,String pretestClientExplainedIfPositiveResult,String pretestClientAskedToAsk,String rapidBloodHivTest ,String hivStatusOfPartner,String postTestWhoToDiscloseTo , String postTestToExplainWindowPeriod, String postTestToAskQuestions, String postTestToExplainWhyTheyNeedToContinue,String referralConfirmatory,String referralMaleCircumcision,String referralPartnerForART,String referralARTClinic,String referralFP,String referralHTCAppointment
+
+    ) {
+        this.id = id;
+        this.dateOfVisit = dateOfVisit;
+        this.consentToTestToday = consentToTestToday;
+        this.pretestClientHasGivenFeedbackOnHiv = pretestClientHasGivenFeedbackOnHiv;
+        this.pretestClientHasSaidWhyTesting = pretestClientHasSaidWhyTesting;
+        this.pretestClientExplainedIfPositiveResult = pretestClientExplainedIfPositiveResult;
+        this.pretestClientAskedToAsk = pretestClientAskedToAsk;
+        this.rapidBloodHivTest = rapidBloodHivTest;
+        this.hivStatusOfPartner = hivStatusOfPartner;
+        this.postTestWhoToDiscloseTo = postTestWhoToDiscloseTo;
+        this.postTestToExplainWindowPeriod = postTestToExplainWindowPeriod;
+        this.postTestToAskQuestions = postTestToAskQuestions;
+        this.postTestToExplainWhyTheyNeedToContinue = postTestToExplainWhyTheyNeedToContinue;
+        this.referralConfirmatory = referralConfirmatory;
+        this.referralMaleCircumcision = referralMaleCircumcision;
+        this.referralPartnerForART = referralPartnerForART;
+        this.referralARTClinic = referralARTClinic;
+        this.referralFP = referralFP;
+        this.referralHTCAppointment = referralHTCAppointment;
+
+
+    }
+
 
     public String getId() {
         return id;

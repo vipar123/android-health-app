@@ -5,155 +5,188 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".activity.StableOnCareActivity"
-    tools:showIn="@layout/activity_stable_on_care">
+    tools:context=".activity.stableoncare.ReferralActivity"
+    tools:showIn="@layout/activity_referral">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/fragment_horizontal_margin"
         android:layout_marginTop="@dimen/fragment_vertical_margin"
-        android:layout_marginRight="@dimen/fragment_vertical_margin"
         android:layout_marginBottom="@dimen/fragment_horizontal_margin"
+        android:layout_marginRight="@dimen/fragment_vertical_margin"
         android:orientation="vertical">
 
-
-
-
+        <!--TODO:: ADD CONTROLS BELOW HERE-->
         <TextView
-            android:id="@+id/textView32"
+            android:id="@+id/textView42"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Do you have a fever?" />
+            android:text="referralConfirmatory" />
 
         <RadioGroup
-
-            android:id="@+id/fever"
+            android:id="@+id/referralconfirm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/rb_fever_yes"
+                android:id="@+id/rb_refconfirm_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="yes" />
 
             <RadioButton
-                android:id="@+id/rb_fever_no"
+                android:id="@+id/rb_refconfirm_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="no" />
         </RadioGroup>
 
         <TextView
-            android:id="@+id/textView33"
+            android:id="@+id/textView43"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Do you have cough " />
+            android:text="referral Male Circumcision" />
 
         <RadioGroup
-            android:id="@+id/cough"
+            android:id="@+id/refmalecircumcision"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/rb_cough_yes"
+                android:id="@+id/rb_refmc_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="yes" />
 
             <RadioButton
-                android:id="@+id/rb_cough_no"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="no" />
-        </RadioGroup>
-
-
-        <TextView
-            android:id="@+id/textView34"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Are you losing weight?" />
-
-        <RadioGroup
-            android:id="@+id/weightloss"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/rb_weight_yes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="yes" />
-
-            <RadioButton
-                android:id="@+id/rb_weight_no"
+                android:id="@+id/rb_refmc_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="no" />
         </RadioGroup>
 
         <TextView
-            android:id="@+id/textView35"
+            android:id="@+id/textView44"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Do you have a headache?" />
+            android:text="referralARTClinic" />
 
         <RadioGroup
-            android:id="@+id/headache"
+            android:id="@+id/refARTClinic"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/rb_headache_yes"
+                android:id="@+id/rb_refclinic_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="yes" />
 
             <RadioButton
-                android:id="@+id/rb_headache_no"
+                android:id="@+id/rb_refclinic_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="no" />
         </RadioGroup>
 
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="referralPartnerForART" />
 
+        <RadioGroup
+            android:id="@+id/refPartnerForART"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
+            <RadioButton
+                android:id="@+id/rb_prtref_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
 
+                android:text="yes" />
 
+            <RadioButton
+                android:id="@+id/rb_prtref_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="referralFP" />
+
+        <RadioGroup
+            android:id="@+id/refFP"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_reffp_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="yes" />
+
+            <RadioButton
+                android:id="@+id/rb_reffp_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="referralHTCAppointment" />
+
+        <RadioGroup
+            android:id="@+id/refHTCAppointment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_refapp_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="yes" />
+
+            <RadioButton
+                android:id="@+id/rb_refapp_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no" />
+        </RadioGroup>
 
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnNext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/fragment_horizontal_margin"
+                android:text="SAVE"
                 android:background="@color/colorAccent"
-                android:text="Next"
-                android:textColor="#fff" />
-
-            <Button
-                android:id="@+id/btnCancel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/colorAccent"
-                android:text="cancel"
-                android:textColor="#fff" />
-
+                android:textColor="#fff"
+                android:id="@+id/btnSave"/>
 
         </LinearLayout>
+
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>

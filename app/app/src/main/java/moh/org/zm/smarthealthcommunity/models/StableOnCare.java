@@ -87,6 +87,32 @@ public class StableOnCare {
     @Expose
     private String syncDate;
 
+    public StableOnCare(String id, String dateOfVisit,String servicePoint,String historyDoYouHaveFever, String historyDoYouHaveCough,String historyAreYouLosingWeight,String historyDoYouHaveHeadache,String examBp,String examTemperature,String examUrineProtein,String adhereClientHasDemonstrated,String adhereClientHasBeenAskedAboutChallenges,String drugProduct,String drugQuantity,String drugFrequency,String dateOfRefill,String referralConfirmatory,String referralMaleCircumcision,String referralARTClinic,String referralPartnerForART,String referralFP,String referralHTCAppointment) {
+        this.id = id;
+        this.dateOfVisit = dateOfVisit;
+        this.servicePoint = servicePoint;
+        this.historyDoYouHaveFever = historyDoYouHaveFever;
+        this.historyDoYouHaveCough = historyDoYouHaveCough;
+        this.historyAreYouLosingWeight = historyAreYouLosingWeight;
+        this.historyDoYouHaveHeadache = historyDoYouHaveHeadache;
+        this.examBp = examBp;
+        this.examTemperature = examTemperature;
+        this.examUrineProtein = examUrineProtein;
+        this.adhereClientHasDemonstrated = adhereClientHasDemonstrated;
+        this.adhereClientHasBeenAskedAboutChallenges = adhereClientHasBeenAskedAboutChallenges;
+        this.drugProduct = drugProduct;
+        this.drugQuantity = drugQuantity;
+        this.drugFrequency = drugFrequency;
+        this.dateOfRefill = dateOfRefill;
+        this.referralConfirmatory = referralConfirmatory;
+        this.referralMaleCircumcision = referralMaleCircumcision;
+        this.referralPartnerForART = referralPartnerForART;
+        this.referralARTClinic = referralARTClinic;
+        this.referralFP = referralFP;
+        this.referralHTCAppointment = referralHTCAppointment;
+    }
+
+
     public String getId() {
         return id;
     }

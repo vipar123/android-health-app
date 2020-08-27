@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".activity.LoginActivity"
-    tools:showIn="@layout/activity_login">
+    tools:context=".activity.HomeActivity"
+    tools:showIn="@layout/activity_home">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Register"
+            android:text="New Patient"
             android:background="@color/colorAccent"
             android:layout_marginBottom="@dimen/fragment_horizontal_margin"
             android:textColor="#fff"

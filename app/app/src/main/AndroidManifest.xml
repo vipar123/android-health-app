@@ -9,28 +9,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.AppointmentActivity">
+        <activity android:name=".activity.AppointmentActivity" android:label="Add Appointment">
 
         </activity>
-        <activity android:name=".activity.ClientRecordActivity">
+        <activity android:name=".activity.ClientRecordActivity" android:label="Client Record">
 
         </activity>
-        <activity android:name=".activity.HIVTestingActivity" >
+        <activity android:name=".activity.HIVTestingActivity" android:label="HivTesting">
 
         </activity>
-        <activity android:name=".activity.HomeActivity" >
-        </activity>
-        <activity android:name=".activity.LoginActivity">
-        </activity>
-        <activity android:name=".activity.PatientRegistrationActivity" >
-        </activity>
-        <activity android:name=".activity.StableOnCareActivity" >            <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".activity.HomeActivity" android:label="Home">
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+        </activity>
+        <activity android:name=".activity.LoginActivity" android:label="Log In">
+
+        </activity>
+        <activity android:name=".activity.PatientRegistrationActivity" android:label="Add Patient">
+        </activity>
+        <activity android:name=".activity.StableOnCareActivity" android:label="Stable On Care">
+
+        </activity>
+        <activity android:name=".activity.stableoncare.ReferralActivity" android:label="Referral">
 
 
+        </activity>
+        <activity android:name=".activity.stableoncare.DispensationActivity" android:label="Dispense Drugs">
+
+</activity>
+        <activity android:name=".activity.stableoncare.PhysicalExamActivity" android:label="Physical Exam">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".activity.SearchActivity" >
 

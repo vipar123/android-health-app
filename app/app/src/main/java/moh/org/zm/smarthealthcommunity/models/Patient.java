@@ -37,6 +37,18 @@ public class Patient {
     @Expose
     private String syncDate;
 
+
+    public Patient(String id, String patientNupn, String firstName, String lastName, String gender, String dateOfBirth,String nrc) {
+        this.id = id;
+        this.patientNupn = patientNupn;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+        this.dateOfBirth = dateOfBirth;
+        this.nrc = nrc;
+        ;
+    }
+
     public String getId() {
         return id;
     }

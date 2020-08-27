@@ -2,6 +2,7 @@
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/retestDate"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
@@ -13,8 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/fragment_horizontal_margin"
         android:layout_marginTop="@dimen/fragment_vertical_margin"
-        android:layout_marginBottom="@dimen/fragment_horizontal_margin"
         android:layout_marginRight="@dimen/fragment_vertical_margin"
+        android:layout_marginBottom="@dimen/fragment_horizontal_margin"
         android:orientation="vertical">
 
 
@@ -25,7 +26,7 @@
             android:text="Date of visit" />
 
         <EditText
-            android:id="@+id/editTextDate4"
+            android:id="@+id/edDateOfVisit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -36,20 +37,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="consent to test today?" />
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+
+        <RadioGroup
+
+            android:id="@+id/consentOnTest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <RadioButton android:id="@+id/rb_consent_yes"
+
+            <RadioButton
+                android:id="@+id/rb_consent_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="yes"
-                android:onClick="onRadioButtonClicked"/>
-            <RadioButton android:id="@+id/rb_consent_no"
+                android:text="yes" />
+
+            <RadioButton
+                android:id="@+id/rb_consent_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="no"
-                android:onClick="onRadioButtonClicked"/>
+                android:text="no" />
         </RadioGroup>
 
 
@@ -58,20 +64,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="client has given feed back on hiv" />
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+
+        <RadioGroup
+            android:id="@+id/feedbackOnHiv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <RadioButton android:id="@+id/rb_feedb_yes"
+
+            <RadioButton
+                android:id="@+id/rb_feedb_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="yes"
-                android:onClick="onRadioButtonClicked"/>
-            <RadioButton android:id="@+id/rb_feedb_no"
+                android:text="yes" />
+
+            <RadioButton
+                android:id="@+id/rb_feedb_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="no"
-                android:onClick="onRadioButtonClicked"/>
+                android:text="no" />
         </RadioGroup>
 
         <TextView
@@ -79,20 +89,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Client Has Said Why Testing" />
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+
+        <RadioGroup
+            android:id="@+id/whyTesting"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="yes"
-                android:onClick="onRadioButtonClicked"/>
+                android:text="yes" />
+
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="no"
-                android:onClick="onRadioButtonClicked"/>
+                android:text="no" />
         </RadioGroup>
 
         <TextView
@@ -100,41 +112,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Client Explained If Positive Result" />
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <RadioButton android:id="@+id/rb_ifpos_yes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="yes"
-                android:onClick="onRadioButtonClicked"/>
-            <RadioButton android:id="@+id/rb_ifpos_no"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="no"
-                android:onClick="onRadioButtonClicked"/>
-        </RadioGroup>
 
-        <TextView
-            android:id="@+id/textView15"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Client ExplainedI f Positive Result" />
         <RadioGroup
+            android:id="@+id/ifPositive"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <RadioButton android:id="@+id/rb_weight_yes"
+
+            <RadioButton
+                android:id="@+id/rb_ifpos_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="yes"
-                android:onClick="onRadioButtonClicked"/>
-            <RadioButton android:id="@+id/rb_weight_no"
+                android:text="yes" />
+
+            <RadioButton
+                android:id="@+id/rb_ifpos_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="no"
-                android:onClick="onRadioButtonClicked"/>
+                android:text="no" />
         </RadioGroup>
 
         <TextView
@@ -142,20 +137,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Client Asked To Ask questions" />
+
         <RadioGroup
+            android:id="@+id/askQuestions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <RadioButton android:id="@+id/rb_askq_yes"
+
+            <RadioButton
+                android:id="@+id/rb_askq_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="yes"
-                android:onClick="onRadioButtonClicked"/>
-            <RadioButton android:id="@+id/rb_askq_no"
+                android:text="yes" />
+
+            <RadioButton
+                android:id="@+id/rb_askq_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="no"
-                android:onClick="onRadioButtonClicked"/>
+                android:text="no" />
         </RadioGroup>
 
         <TextView
@@ -166,7 +165,7 @@
 
 
         <Spinner
-            android:id="@+id/spinner5"
+            android:id="@+id/spBloodtest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -190,6 +189,7 @@
             android:text="hiv Status Of Partner Known" />
 
         <RadioGroup
+            android:id="@+id/partnerStatusKnown"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -198,14 +198,13 @@
                 android:id="@+id/rb_statuskn_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:text="yes" />
 
             <RadioButton
                 android:id="@+id/rb_statuskn_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
+
                 android:text="no" />
         </RadioGroup>
 
@@ -216,7 +215,7 @@
             android:text="hiv Status Of Partner" />
 
         <Spinner
-            android:id="@+id/spinner7"
+            android:id="@+id/spPartnerStatus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -225,20 +224,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="post Test Who To Disclose To" />
+
         <RadioGroup
+            android:id="@+id/discloseTest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <RadioButton android:id="@+id/rb_tstds_yes"
+
+            <RadioButton
+                android:id="@+id/rb_tstds_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="yes"
-                android:onClick="onRadioButtonClicked"/>
-            <RadioButton android:id="@+id/rb_tstds_no"
+                android:text="yes" />
+
+            <RadioButton
+                android:id="@+id/rb_tstds_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="no"
-                android:onClick="onRadioButtonClicked"/>
+                android:text="no" />
         </RadioGroup>
 
         <TextView
@@ -248,6 +251,7 @@
             android:text="post Test To Explain Window Period" />
 
         <RadioGroup
+            android:id="@+id/windowPeriod"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
@@ -256,14 +260,14 @@
                 android:id="@+id/rb_winp_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
+
                 android:text="yes" />
 
             <RadioButton
                 android:id="@+id/rb_winp_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
+
                 android:text="no" />
         </RadioGroup>
 
@@ -274,6 +278,7 @@
             android:text="Post Test To Explain Why They Need To Continue" />
 
         <RadioGroup
+            android:id="@+id/needToContinue"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
@@ -282,14 +287,14 @@
                 android:id="@+id/rb_contneed_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
+
                 android:text="yes" />
 
             <RadioButton
                 android:id="@+id/rb_contneed_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
+
                 android:text="no" />
         </RadioGroup>
 
@@ -298,20 +303,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="post Test To Ask Questions" />
+
         <RadioGroup
+            android:id="@+id/askq"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <RadioButton android:id="@+id/rb_askq1_yes"
+
+            <RadioButton
+                android:id="@+id/rb_askq1_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="yes"
-                android:onClick="onRadioButtonClicked"/>
-            <RadioButton android:id="@+id/rb_askq1_no"
+                android:text="yes" />
+
+            <RadioButton
+                android:id="@+id/rb_askq1_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="no"
-                android:onClick="onRadioButtonClicked"/>
+                android:text="no" />
         </RadioGroup>
 
         <TextView
@@ -319,20 +328,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="referral Confirmatory" />
+
         <RadioGroup
+            android:id="@+id/refconfirm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <RadioButton android:id="@+id/rb_refcon_yes"
+
+            <RadioButton
+                android:id="@+id/rb_refcon_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="yes"
-                android:onClick="onRadioButtonClicked"/>
-            <RadioButton android:id="@+id/rb_refcon_no"
+                android:text="yes" />
+
+            <RadioButton
+                android:id="@+id/rb_refcon_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="no"
-                android:onClick="onRadioButtonClicked"/>
+                android:text="no" />
         </RadioGroup>
 
         <TextView
@@ -340,20 +353,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="referral Male Circumcision" />
+
         <RadioGroup
+            android:id="@+id/refmc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <RadioButton android:id="@+id/rb_refmc_yes"
+
+            <RadioButton
+                android:id="@+id/rb_refmc_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="yes"
-                android:onClick="onRadioButtonClicked"/>
-            <RadioButton android:id="@+id/rb_refmc_no"
+                android:text="yes" />
+
+            <RadioButton
+                android:id="@+id/rb_refmc_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="no"
-                android:onClick="onRadioButtonClicked"/>
+                android:text="no" />
         </RadioGroup>
 
         <TextView
@@ -361,20 +378,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="referral ART Clinic" />
+
         <RadioGroup
+            android:id="@+id/refARTClinic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <RadioButton android:id="@+id/rb_refclinic_yes"
+
+            <RadioButton
+                android:id="@+id/rb_refclinic_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="yes"
-                android:onClick="onRadioButtonClicked"/>
-            <RadioButton android:id="@+id/rb_refclinic_no"
+                android:text="yes" />
+
+            <RadioButton
+                android:id="@+id/rb_refclinic_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="no"
-                android:onClick="onRadioButtonClicked"/>
+                android:text="no" />
         </RadioGroup>
 
         <TextView
@@ -382,40 +403,49 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="referral Partner For ART" />
+
         <RadioGroup
+            android:id="@+id/refPartnerForART"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <RadioButton android:id="@+id/rb_refpart_yes"
+
+            <RadioButton
+                android:id="@+id/rb_refpart_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="yes"
-                android:onClick="onRadioButtonClicked"/>
-            <RadioButton android:id="@+id/rb_refpart_no"
+                android:text="yes" />
+
+            <RadioButton
+                android:id="@+id/rb_refpart_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="no"
-                android:onClick="onRadioButtonClicked"/>
+                android:text="no" />
         </RadioGroup>
+
         <TextView
             android:id="@+id/textView30"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="referral FP" />
+
         <RadioGroup
+            android:id="@+id/refFP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <RadioButton android:id="@+id/rb_reffp_yes"
+
+            <RadioButton
+                android:id="@+id/rb_reffp_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="yes"
-                android:onClick="onRadioButtonClicked"/>
-            <RadioButton android:id="@+id/rb_reffp_no"
+                android:text="yes" />
+
+            <RadioButton
+                android:id="@+id/rb_reffp_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="no"
-                android:onClick="onRadioButtonClicked"/>
+                android:text="no" />
         </RadioGroup>
 
         <TextView
@@ -423,20 +453,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="referral HTC Appointment" />
+
         <RadioGroup
+            android:id="@+id/refHTCAppointment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <RadioButton android:id="@+id/rb_refhtc_yes"
+
+            <RadioButton
+                android:id="@+id/rb_refhtc_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="yes"
-                android:onClick="onRadioButtonClicked"/>
-            <RadioButton android:id="@+id/rb_refhtc_no"
+                android:text="yes" />
+
+            <RadioButton
+                android:id="@+id/rb_refhtc_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="no"
-                android:onClick="onRadioButtonClicked"/>
+                android:text="no" />
         </RadioGroup>
 
         <LinearLayout
@@ -445,16 +479,16 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/search"
+                android:id="@+id/btnSaveHivTesting"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fragment_horizontal_margin"
                 android:background="@color/colorAccent"
                 android:text="Save"
-                android:layout_marginBottom="@dimen/fragment_horizontal_margin"
                 android:textColor="#fff" />
 
             <Button
-                android:id="@+id/search3"
+                android:id="@+id/btnCancel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

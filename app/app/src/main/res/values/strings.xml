@@ -9,4 +9,41 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string-array name="service_points">
+        <item>Pharmacy</item>
+        <item>ART</item>
+        <item>VMMC</item>
+        <item>MCH</item>
+        <item>Family Planning</item>
+    </string-array>
+    <string-array name="blood_test">
+        <item>unknown</item>
+        <item>positive</item>
+        <item>negative</item>
+    </string-array>
+    <string-array name="partner_status">
+        <item>unknown</item>
+        <item>positive</item>
+        <item>negative</item>
+    </string-array>
+    <string-array name="drug_products">
+        <item>TAF</item>
+        <item>EFV</item>
+        <item>DTG</item>
+    </string-array>
+    <string-array name="frequency">
+        <item>BD</item>
+        <item>OD</item>
+    </string-array>
+    <string-array name="urineprotein">
+        <item>negative</item>
+        <item>trace</item>
+        <item>+</item>
+        <item>++</item>
+        <item>+++</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
 </resources>
