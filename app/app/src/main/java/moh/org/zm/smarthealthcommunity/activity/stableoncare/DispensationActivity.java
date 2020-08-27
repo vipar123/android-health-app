@@ -32,9 +32,9 @@ public class DispensationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dispensation);
         Button btnDispense = findViewById(R.id.btnDispense);
-        EditText quantity = findViewById(R.id.edQuantity);
-        Spinner drugProduct= findViewById(R.id.spdrugProduct);
-        Spinner frequency= findViewById(R.id.spFrequency);
+        final EditText quantity = findViewById(R.id.edQuantity);
+        final Spinner drugProduct= findViewById(R.id.spdrugProduct);
+        final Spinner frequency= findViewById(R.id.spFrequency);
 
         ArrayAdapter<CharSequence> drugProductAdapter = ArrayAdapter.createFromResource(this,
                 R.array.drug_products, android.R.layout.simple_spinner_item);
@@ -53,7 +53,7 @@ public class DispensationActivity extends AppCompatActivity {
                     Intent i = new Intent(DispensationActivity.this, ReferralActivity.class);
                     i.putExtra(DP_QUANTITY, quantity.getText());
                     i.putExtra(DRUG_PRODUCT,drugProduct.getSelectedItemId() );
-                    i.putExtra(DP_FREQUENCY, frequency.getSelectedItem());
+                    i.putExtra(DP_FREQUENCY, frequency.getSelectedItemId());
 
                     startActivity(i);
                 }

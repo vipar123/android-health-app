@@ -16,6 +16,9 @@ import static moh.org.zm.smarthealthcommunity.helpers.Constants.HH_COUGH;
 import static moh.org.zm.smarthealthcommunity.helpers.Constants.HH_FEVER;
 import static moh.org.zm.smarthealthcommunity.helpers.Constants.HH_HEADACHE;
 import static moh.org.zm.smarthealthcommunity.helpers.Constants.HH_WEIGHT_LOSS;
+import static moh.org.zm.smarthealthcommunity.helpers.Constants.PE_BLOOD_PRESSURE;
+import static moh.org.zm.smarthealthcommunity.helpers.Constants.PE_TEMPERATURE;
+import static moh.org.zm.smarthealthcommunity.helpers.Constants.PE_URINE_PROTEIN;
 
 public class PhysicalExamActivity extends AppCompatActivity {
 
@@ -24,27 +27,26 @@ public class PhysicalExamActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_physical_exam);
         Button btnNext = findViewById(R.id.btnNext);
-        EditText bloodPressure = findViewById(R.id.edBloodPressure);
-        EditText temperature = findViewById(R.id.edtemperature);
+        final EditText bloodPressure = findViewById(R.id.edBloodPressure);
+        final EditText temperature = findViewById(R.id.edtemperature);
 
 
 
-       Spinner urineprotein= findViewById(R.id.spUrineProtein);
+       final Spinner urineProtein= findViewById(R.id.spUrineProtein);
 
         ArrayAdapter<CharSequence> urineproteinAdapter = ArrayAdapter.createFromResource(this,
                 R.array.urineprotein, android.R.layout.simple_spinner_item);
         urineproteinAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        urineprotein.setAdapter(urineproteinAdapter);
+        urineProtein.setAdapter(urineproteinAdapter);
 
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (true) {
                     Intent i = new Intent(PhysicalExamActivity.this, DispensationActivity.class);
-                    i.putExtra(HH_FEVER, getSelectedRadioValue(fever.getCheckedRadioButtonId()));
-                    i.putExtra(HH_COUGH, getSelectedRadioValue(cough.getCheckedRadioButtonId()));
-                    i.putExtra(HH_WEIGHT_LOSS, getSelectedRadioValue(weightloss.getCheckedRadioButtonId()));
-                    i.putExtra(HH_HEADACHE, getSelectedRadioValue(headache.getCheckedRadioButtonId()));
+                    i.putExtra(PE_TEMPERATURE, temperature.getText());
+                    i.putExtra(PE_BLOOD_PRESSURE,bloodPressure.getText() );
+                    i.putExtra(PE_URINE_PROTEIN, urineProtein.getSelectedItemId());
                     startActivity(i);
                 }
 
