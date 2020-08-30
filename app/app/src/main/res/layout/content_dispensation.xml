@@ -69,7 +69,7 @@
             android:id="@+id/textView39"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="adhere Client Has Demonstrated" />
+            android:text="adhere Client Has Demonstrated Drug Intake" />
 
         <RadioGroup
             android:id="@+id/clientdemonstrated"
@@ -94,7 +94,7 @@
             android:id="@+id/textView40"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="adhere Client Has Been Asked About Challenges" />
+            android:text="adhere Client Has Been Asked About Challenges in drug intake " />
 
         <RadioGroup
             android:id="@+id/askedchallenges"

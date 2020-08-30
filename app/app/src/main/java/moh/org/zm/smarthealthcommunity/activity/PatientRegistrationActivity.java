@@ -1,5 +1,7 @@
 package moh.org.zm.smarthealthcommunity.activity;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -7,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.UUID;
@@ -59,6 +62,16 @@ public class PatientRegistrationActivity extends AppCompatActivity {
                         finish();
                     }
                 });
+                new AlertDialog.Builder(PatientRegistrationActivity.this)
+                        .setTitle("PatientRegistration")
+                        .setMessage("Registration successfully saved!")
+                        .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                Intent i = new Intent(PatientRegistrationActivity.this, ClientRecordActivity.class);
+                                startActivity(i);
+                            }
+                        })
+                        .show();
             }
         });
     }

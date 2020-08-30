@@ -13,7 +13,11 @@
 
         </activity>
         <activity android:name=".activity.ClientRecordActivity" android:label="Client Record">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".activity.HIVTestingActivity" android:label="Hiv Testing">
 
@@ -40,11 +44,7 @@
 
         </activity>
         <activity android:name=".activity.SearchActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
